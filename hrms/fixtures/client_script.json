@@ -1,0 +1,112 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee Checkin",
+  "enabled": 1,
+  "modified": "2026-02-14 11:27:55.776090",
+  "module": "HR",
+  "name": "Employee Checkin Single Form",
+  "script": "frappe.ui.form.on('Employee Checkin', {\n\n    refresh(frm) {\n\n        // -----------------------------------\n        // ALERT IF NO CHECKOUT\n        // -----------------------------------\n        if (frm.doc.time && !frm.doc.checkout_time && !frm.doc.__islocal) {\n            frm.dashboard.set_headline_alert(\n                'Employee has not checked out yet',\n                'orange'\n            );\n        }\n\n        // -----------------------------------\n        // SHOW WORK HOURS\n        // -----------------------------------\n        if (frm.doc.time && frm.doc.checkout_time) {\n            let checkin = new Date(frm.doc.time);\n            let checkout = new Date(frm.doc.checkout_time);\n\n            let diff = checkout - checkin;\n            let hours = Math.floor(diff / 1000 / 60 / 60);\n            let minutes = Math.floor((diff / 1000 / 60) % 60);\n\n            frm.dashboard.set_headline(\n                `Working Hours: ${hours} hours ${minutes} minutes`\n            );\n        }\n\n        // -----------------------------------\n        // LOCK CHECK-IN AFTER SAVE\n        // -----------------------------------\n        if (!frm.is_new() && frm.doc.time) {\n            frm.set_df_property('time', 'read_only', 1);\n            frm.set_df_property('log_type', 'read_only', 1);\n        }\n\n        // -----------------------------------\n        // CHECKOUT BUTTON\n        // -----------------------------------\n        if (!frm.is_new() && frm.doc.time && !frm.doc.checkout_time) {\n\n            frm.add_custom_button('Checkout Now', function () {\n\n                // fill checkout time\n                frm.set_value('checkout_time', frappe.datetime.now_datetime());\n\n                // ONLY fill custom OUT field\n                frm.set_value('log_type_out', 'Out');\n\n                frappe.show_alert({\n                    message: \"Checkout recorded\",\n                    indicator: \"green\"\n                });\n\n            }).addClass('btn-primary');\n        }\n\n        // -----------------------------------\n        // LOCK AFTER CHECKOUT\n        // -----------------------------------\n        if (frm.doc.checkout_time) {\n            frm.set_df_property('time', 'read_only', 1);\n            frm.set_df_property('log_type', 'read_only', 1);\n            frm.set_df_property('checkout_time', 'read_only', 1);\n            frm.set_df_property('log_type_out', 'read_only', 1);\n        }\n    },\n\n    // -----------------------------------\n    // VALIDATE CHECKOUT > CHECKIN\n    // -----------------------------------\n    checkout_time(frm) {\n        if (frm.doc.time && frm.doc.checkout_time) {\n            let checkin = new Date(frm.doc.time);\n            let checkout = new Date(frm.doc.checkout_time);\n\n            if (checkout < checkin) {\n                frappe.msgprint('Check-out time cannot be before check-in time');\n                frm.set_value('checkout_time', '');\n            }\n        }\n    },\n\n    // -----------------------------------\n    // PREVENT DUPLICATE CHECKIN\n    // -----------------------------------\n    employee(frm) {\n        if (frm.doc.employee && frm.doc.__islocal) {\n            frappe.call({\n                method: 'frappe.client.get_list',\n                args: {\n                    doctype: 'Employee Checkin',\n                    filters: {\n                        employee: frm.doc.employee,\n                        time: ['between', [\n                            frappe.datetime.get_today() + ' 00:00:00',\n                            frappe.datetime.get_today() + ' 23:59:59'\n                        ]]\n                    },\n                    fields: ['name']\n                },\n                callback: function(r) {\n                    if (r.message && r.message.length > 0) {\n                        let existing = r.message[0];\n\n                        frappe.msgprint({\n                            title: 'Existing Record Found',\n                            message:\n                                'Already checked in today.<br>' +\n                                `<a href=\"/app/employee-checkin/${existing.name}\">Open Record</a>`,\n                            indicator: 'orange'\n                        });\n                    }\n                }\n            });\n        }\n    }\n\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Resignation Request",
+  "enabled": 1,
+  "modified": "2026-02-14 14:43:24.322450",
+  "module": "HR",
+  "name": "Employee Seperation",
+  "script": "frappe.ui.form.on('Resignation Request', {\n    refresh: function(frm) {\n        // Show button only if HR has reviewed the request\n        if (frm.doc.workflow_state === 'Reviewed by HR' && frm.doc.docstatus === 1) {\n            frm.add_custom_button(__('Process Separation'), function() {\n                frappe.model.with_doctype('Employee Separation', function() {\n                    let new_doc = frappe.model.get_new_doc('Employee Separation');\n                    \n                    // Map the data\n                    new_doc.employee = frm.doc.employee;\n                    new_doc.company = frm.doc.company;\n                    new_doc.separation_begins_on = frm.doc.requested_last_working_date;\n                    \n                    // Set a reference back to the original request\n                    new_doc.resignation_request_reference = frm.doc.name; \n                    \n                    frappe.set_route('Form', 'Employee Separation', new_doc.name);\n                });\n            }, __(\"Actions\"));\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee Checkin",
+  "enabled": 1,
+  "modified": "2026-02-14 15:01:56.369739",
+  "module": null,
+  "name": "Location",
+  "script": "frappe.ui.form.on('Employee Checkin', {\n    refresh: function(frm) {\n        if (frm.is_new()) {\n            if (navigator.geolocation) {\n                navigator.geolocation.getCurrentPosition(function(position) {\n                    let loc_string = position.coords.latitude + \", \" + position.coords.longitude;\n                    // Change 'location' to 'device_id'\n                    frm.set_value('device_id', loc_string); \n                });\n            }\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Leave Application",
+  "enabled": 1,
+  "modified": "2026-02-16 10:57:34.747447",
+  "module": null,
+  "name": "Leave Application self ignore",
+  "script": "frappe.ui.form.on('Leave Application', {\n    refresh: function(frm) {\n        // Check if current user is the employee in this application\n        if (frm.doc.employee && !frm.is_new()) {\n            frappe.db.get_value('Employee', \n                {'user_id': frappe.session.user}, \n                'name',\n                function(r) {\n                    if (r && r.name === frm.doc.employee) {\n                        // This is user's own leave application\n                        \n                        // If user has HR/Leave Approver role\n                        if (frappe.user.has_role(['HR Manager', 'Leave Approver'])) {\n                            \n                            // Show warning banner\n                            frm.dashboard.add_comment(\n                                __('Note: You cannot approve your own leave application. Another approver must review this.'),\n                                'orange',\n                                true\n                            );\n                            \n                            // Remove workflow buttons that approve\n                            if (frm.doc.workflow_state !== 'Approved') {\n                                // This prevents clicking approve buttons\n                                frm.page.btn_primary && frm.page.btn_primary.hide();\n                            }\n                        }\n                    }\n                }\n            );\n        }\n    },\n    \n    before_workflow_action: function(frm) {\n        // Prevent workflow action if self-approval\n        if (frm.doc.employee) {\n            return new Promise((resolve, reject) => {\n                frappe.db.get_value('Employee', \n                    {'user_id': frappe.session.user}, \n                    'name',\n                    function(r) {\n                        if (r && r.name === frm.doc.employee) {\n                            // Check if action is approval\n                            if (frm.selected_workflow_action && \n                                frm.selected_workflow_action.toLowerCase().includes('approve')) {\n                                \n                                frappe.msgprint({\n                                    title: __('Not Allowed'),\n                                    indicator: 'red',\n                                    message: __('You cannot approve your own leave application. Please ask another approver.')\n                                });\n                                reject();\n                                return;\n                            }\n                        }\n                        resolve();\n                    }\n                );\n            });\n        }\n    },\n    \n    employee: function(frm) {\n        // Re-check when employee field changes\n        frm.trigger('refresh');\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee Checkin",
+  "enabled": 1,
+  "modified": "2026-02-16 11:30:44.743314",
+  "module": "HR",
+  "name": "Employee Name",
+  "script": "frappe.ui.form.on('Employee Checkin', {\n    onload(frm) {\n\n        // Only for new record\n        if (frm.is_new()) {\n\n            // Get employee linked to logged in user\n            frappe.call({\n                method: \"frappe.client.get_value\",\n                args: {\n                    doctype: \"Employee\",\n                    filters: {\n                        user_id: frappe.session.user\n                    },\n                    fieldname: [\"name\", \"employee_name\"]\n                },\n                callback: function(r) {\n                    if (r.message) {\n                        frm.set_value(\"employee\", r.message.name);\n                        frm.set_value(\"employee_name\", r.message.employee_name);\n                    }\n                }\n            });\n        }\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Leave Application",
+  "enabled": 1,
+  "modified": "2026-02-16 11:36:19.438984",
+  "module": null,
+  "name": "Send Notification",
+  "script": "frappe.ui.form.on('Leave Application', {\n    after_save: function(frm) {\n        if (frm.doc.status === \"Open\" && frm.doc.__islocal === undefined) {\n            // Call the whitelisted method\n            frappe.call({\n                method: 'frappe.custom.twilio_sms.send_sms_notification',\n                args: {\n                    docname: frm.doc.name\n                },\n                callback: function(r) {\n                    if (r.message && r.message.status === \"success\") {\n                        frappe.show_alert({message: \"SMS Sent!\", indicator: 'green'}, 3);\n                    }\n                }\n            });\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee Onboarding",
+  "enabled": 1,
+  "modified": "2026-02-16 12:42:59.415519",
+  "module": null,
+  "name": "Fetch Job Applicant",
+  "script": "frappe.ui.form.on(\"Employee Onboarding\", {\n    onload(frm) {\n        frm.set_query(\"job_applicant\", function() {\n            return {\n                filters: {\n                    status: \"Selected\"\n                }\n            };\n        });\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Job Applicant",
+  "enabled": 1,
+  "modified": "2026-02-16 12:45:26.213666",
+  "module": null,
+  "name": "Hide Convert to Employee Until Selected",
+  "script": "frappe.ui.form.on(\"Job Applicant\", {\n    refresh(frm) {\n        if (frm.doc.status !== \"Selected\") {\n            frm.remove_custom_button(\"Employee\", \"Create\");\n        }\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Food Order",
+  "enabled": 1,
+  "modified": "2026-02-17 10:46:49.883858",
+  "module": null,
+  "name": "Food Order Form Script",
+  "script": "frappe.ui.form.on(\"Food Order\", {\n\n    onload(frm) {\n        if (!frm.is_new()) return;\n        let tomorrow = frappe.datetime.add_days(\n            frappe.datetime.get_today(), 1\n        );\n        frm.set_value(\"order_date\", tomorrow);\n        frm.set_df_property(\"order_date\", \"read_only\", 1);\n\n        frappe.call({\n            method: \"frappe.client.get_value\",\n            args: {\n                doctype:   \"Employee\",\n                filters:   { user_id: frappe.session.user },\n                fieldname: [\"name\", \"employee_name\"]\n            },\n            callback(r) {\n                if (r.message) {\n                    frm.set_value(\"employee\", r.message.name);\n                    frm.set_value(\"employee_name\", r.message.employee_name);\n                    frm.set_df_property(\"employee\", \"read_only\", 1);\n                }\n            }\n        });\n    },\n\n    refresh(frm) {\n        let s = frm.doc.scan_status;\n        if (s === \"Scanned\") {\n            frm.dashboard.set_headline_alert(\n                `<span class='indicator-pill green'>\n                  ✅ Scanned at ${frm.doc.scan_time || \"-\"}</span>`,\n                \"green\"\n            );\n        } else if (s === \"Missed\") {\n            frm.dashboard.set_headline_alert(\n                `<span class='indicator-pill red'>\n                  ❌ Missed — Fine: ₹${frm.doc.fine_amount || 0}</span>`,\n                \"red\"\n            );\n        } else if (s === \"Booked\") {\n            frm.dashboard.set_headline_alert(\n                `<span class='indicator-pill blue'>\n                  🎫 Token: ${frm.doc.token_number || \"submit to get token\"}</span>`,\n                \"blue\"\n            );\n        }\n    },\n\n    breakfast(frm) { load_item(frm, \"Breakfast\", \"breakfast_item\"); },\n    lunch(frm)     { load_item(frm, \"Lunch\",     \"lunch_item\");     },\n    dinner(frm)    { load_item(frm, \"Dinner\",    \"dinner_item\");    },\n});\n\nfunction load_item(frm, meal, field) {\n    if (!frm.doc[meal.toLowerCase()]) {\n        frm.set_value(field, \"\"); return;\n    }\n    let tomorrow = frappe.datetime.add_days(\n        frappe.datetime.get_today(), 1\n    );\n    frappe.db.get_list(\"Food Menu Item\", {\n        filters: { meal_type: meal, date: tomorrow, available: 1 },\n        fields:  [\"item_name\"]\n    }).then(items => {\n        if (!items.length) {\n            frappe.msgprint(`No ${meal} items available tomorrow.`);\n            frm.set_value(meal.toLowerCase(), 0); return;\n        }\n        if (items.length === 1) {\n            frm.set_value(field, items[0].item_name); return;\n        }\n        let opts = items.map(i =>\n            `<option value=\"${i.item_name}\">${i.item_name}</option>`\n        ).join(\"\");\n        let d = new frappe.ui.Dialog({\n            title: `Choose ${meal} Item`,\n            fields: [{ fieldtype:\"HTML\", options:\n                `<select id=\"pick\" class=\"form-control mt-2\">\n                  <option value=\"\">-- Select --</option>${opts}\n                 </select>`\n            }],\n            primary_action_label: \"Confirm\",\n            primary_action() {\n                let v = document.getElementById(\"pick\").value;\n                if (!v) { frappe.msgprint(\"Select an item.\"); return; }\n                frm.set_value(field, v);\n                d.hide();\n            }\n        });\n        d.show();\n    });\n}",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Food Menu Item",
+  "enabled": 1,
+  "modified": "2026-02-17 10:48:05.205507",
+  "module": "Food App",
+  "name": "Food Menu Item Form Script",
+  "script": "frappe.ui.form.on(\"Food Menu Item\", {\n\n    onload(frm) {\n        if (frm.is_new()) {\n            frm.set_value(\"date\",\n                frappe.datetime.add_days(\n                    frappe.datetime.get_today(), 1\n                )\n            );\n        }\n    },\n\n    refresh(frm) {\n        if (frm.is_new()) return;\n        frm.add_custom_button(\"👥 View Booking Count\", () => {\n            show_count_dialog(frm.doc.date);\n        });\n        show_count_badge(frm);\n    },\n\n    date(frm)      { show_count_badge(frm); },\n    meal_type(frm) { show_count_badge(frm); },\n});\n\nfunction show_count_badge(frm) {\n    if (!frm.doc.date || !frm.doc.meal_type) return;\n    frappe.call({\n        method: \"get_food_order_counts\",\n        args: { date: frm.doc.date },\n        callback(r) {\n            if (!r.message) return;\n            let meal  = frm.doc.meal_type;\n            let count = (r.message[meal] || {}).count || 0;\n            frm.dashboard.set_headline_alert(\n                `<span class='indicator-pill blue'>\n                  👥 ${count} employees booked ${meal} on ${frm.doc.date}\n                  — Prepare ${count} portions</span>`,\n                \"blue\"\n            );\n        }\n    });\n}\n\nfunction show_count_dialog(date) {\n    frappe.call({\n        method: \"get_food_order_counts\",\n        args: { date },\n        callback(r) {\n            if (!r.message) return;\n            let d = r.message;\n            let meals = [\"Breakfast\", \"Lunch\", \"Dinner\"];\n            let icons = { Breakfast:\"🍳\", Lunch:\"🍱\", Dinner:\"🍽️\" };\n            let cols  = {\n                Breakfast:\"#D97706\",\n                Lunch:\"#059669\",\n                Dinner:\"#4F46E5\"\n            };\n\n            let cards = meals.map(m => {\n                let info = d[m] || { count:0, employees:[] };\n                let rows = info.employees.map((e,i) =>\n                    `<tr><td>${i+1}</td><td>${e.employee_name}</td>\n                     <td>${e.item || \"-\"}</td></tr>`\n                ).join(\"\");\n                return `\n                <div style=\"text-align:center;padding:16px;\n                     border-top:4px solid ${cols[m]};\n                     border-radius:12px;background:#f9fafb;\n                     margin-bottom:16px;\">\n                  <div style=\"font-size:32px\">${icons[m]}</div>\n                  <div style=\"font-size:44px;font-weight:900;\n                       color:${cols[m]}\">${info.count}</div>\n                  <div style=\"color:#6b7280;font-size:13px\">\n                       prepare ${info.count} portions</div>\n                </div>\n                ${rows ? `<table class=\"table table-sm table-bordered mb-3\">\n                  <thead><tr><th>#</th><th>Name</th>\n                  <th>${m} Item</th></tr></thead>\n                  <tbody>${rows}</tbody>\n                </table>` : \"\"}\n                `;\n            }).join(\"\");\n\n            let popup = new frappe.ui.Dialog({\n                title: `👨‍🍳 Bookings for ${date} — Total: ${d.total}`,\n                fields:[{ fieldtype:\"HTML\",\n                    options: `<div style=\"padding:8px\">${cards}</div>`\n                }],\n                primary_action_label: \"Close\",\n                primary_action: () => popup.hide()\n            });\n            popup.show();\n        }\n    });\n}",
+  "view": "Form"
+ }
+]

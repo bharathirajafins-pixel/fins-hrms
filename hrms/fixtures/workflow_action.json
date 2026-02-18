@@ -1,0 +1,1874 @@
+[
+ {
+  "completed_by": "employee@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:06:09.914057",
+  "name": "juaqcrq68p",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "employee@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:05:28.993435",
+  "name": "qqus2mcvep",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaram122326@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:05:54.385849",
+  "name": "8kbsd5kbk3",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaram122326@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:06:26.570603",
+  "name": "913i2oma9h",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:06:26.583357",
+  "name": "969s6qs007",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "employee@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:10:20.316031",
+  "name": "bbu06ojvta",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaram122326@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:10:39.293961",
+  "name": "bfb09mr8dn",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "employee@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:11:29.308345",
+  "name": "c2jvvj2fpl",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaram122326@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:11:39.822516",
+  "name": "c4tumq5e1v",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-10 21:11:39.829910",
+  "name": "c869o943dk",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00002",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 10:25:53.665838",
+  "name": "9c0e8lev8p",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Shift Request",
+  "reference_name": "HR-SHR-26-02-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "employee1@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 18:50:24.072980",
+  "name": "gt8io53496",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:07.988945",
+  "name": "gvghhm3iij",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.105875",
+  "name": "5tgn6efoh5",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.158860",
+  "name": "5th6cmdti9",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.213550",
+  "name": "5th5c2q3mf",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.272939",
+  "name": "5tiqdlvhtg",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.335544",
+  "name": "5tj54gllff",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00008",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.388204",
+  "name": "5tjkinns2u",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00009",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.444611",
+  "name": "5tkqe4lcnk",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.501150",
+  "name": "5tkk6hj74m",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.553355",
+  "name": "5tltlqau93",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00012",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.601424",
+  "name": "5tl0n9bi18",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00013",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 19:26:08.648092",
+  "name": "5tmogq4v38",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance",
+  "reference_name": "HR-ATT-2026-00014",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "employee@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 21:19:53.594654",
+  "name": "8h04oonk0i",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "Expense Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 21:37:29.949496",
+  "name": "8ig3qs15rd",
+  "permitted_roles": [
+   {
+    "role": "Expense Approver"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-12 21:37:29.983342",
+  "name": "iskgpnoejr",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "employee@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 11:58:29.409514",
+  "name": "b471ak969u",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 11:59:39.842522",
+  "name": "bc6vufgj8j",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 11:59:39.865353",
+  "name": "c26ar4kr0a",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00003",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 13:19:14.758754",
+  "name": "e25k1pd5lo",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 13:19:24.025517",
+  "name": "qmbbu12r4a",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 14:56:58.777512",
+  "name": "jurq6nm3cq",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Shift Request",
+  "reference_name": "HR-SHR-26-02-00002",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:06:59.738025",
+  "name": "pp10aqjfu2",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:06:59.772953",
+  "name": "pqlfci8e75",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:10:12.821208",
+  "name": "r6v3rdp6i0",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:10:41.354991",
+  "name": "rn0vvemm9f",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:11:22.713638",
+  "name": "sbla0ev8sr",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:11:22.748087",
+  "name": "scrfdg4mie",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00002",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:17:18.468398",
+  "name": "vquptf8rs6",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:17:18.528286",
+  "name": "vs1s31qulr",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00003",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:20:59.365934",
+  "name": "202l8hjjok",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:20:59.396947",
+  "name": "212qm5sfnu",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00004",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "boss@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:24:00.676504",
+  "name": "3onrh4orn2",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Head",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:25:39.290599",
+  "name": "3pmjq44uld",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:25:39.353266",
+  "name": "4oh69jmt1e",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Salary Slip",
+  "reference_name": "Sal Slip/HR-EMP-00005/00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaram122326@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:37:25.225642",
+  "name": "99n9cm51nc",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 15:39:21.522689",
+  "name": "bl4imgn32i",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sakthii5452@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 16:38:59.577122",
+  "name": "fi7788oqi4",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 16:43:15.410965",
+  "name": "fnjqpmm3cc",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sakthii5452@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 16:46:40.187836",
+  "name": "k15264ibcr",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00008",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 16:48:03.692225",
+  "name": "k7he51l7ni",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00008",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 16:48:03.696738",
+  "name": "l1kre90467",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00008",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:11:17.017262",
+  "name": "5q2jrgkfq6",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00004",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:21:56.102708",
+  "name": "7u5l262p6a",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Shift Request",
+  "reference_name": "HR-SHR-26-02-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:24:02.602675",
+  "name": "d6g9924cfp",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Attendance Request",
+  "reference_name": "HR-ARQ-26-02-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sakthii5452@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:25:39.040923",
+  "name": "e67mbk0a74",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:25:39.046569",
+  "name": "e7e2puetef",
+  "permitted_roles": [
+   {
+    "role": "Expense Approver"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00002",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Expense Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:53:23.077569",
+  "name": "h3abnvgtrm",
+  "permitted_roles": [
+   {
+    "role": "Expense Approver"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 18:53:23.108566",
+  "name": "ufft18a8h2",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00003",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-13 19:34:36.731523",
+  "name": "mgf4bn4n5p",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Employee Advance",
+  "reference_name": "HR-EAD-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sakthii5452@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 10:24:05.816928",
+  "name": "vhahub1gkp",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00009",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 10:29:04.671989",
+  "name": "vqa84scuj9",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00009",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 10:29:04.676073",
+  "name": "2nmak6p8db",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00009",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 10:35:50.788329",
+  "name": "6mj9h6tj9o",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Appraisal",
+  "reference_name": "HR-APR-2026-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:03:16.477451",
+  "name": "bg96rdod5f",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:03:22.402115",
+  "name": "hl80nb223o",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 12:53:48.241686",
+  "name": "ng2vj9ljnh",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Separation",
+  "reference_name": "HR-EMP-SEP-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 12:53:54.841982",
+  "name": "nha2v24q5n",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Employee Separation",
+  "reference_name": "HR-EMP-SEP-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending HR Review"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 12:53:54.879934",
+  "name": "njc7l6nelh",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Employee Separation",
+  "reference_name": "HR-EMP-SEP-2026-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "Expense Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 13:25:26.473778",
+  "name": "9hp70nvu5g",
+  "permitted_roles": [
+   {
+    "role": "Expense Approver"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 13:25:26.480217",
+  "name": "a2gj9stns8",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00004",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "sakthii5452@gmail.com",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 14:43:58.492812",
+  "name": "o1sbsm10dd",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Resignation Request",
+  "reference_name": "o1q2mfn9ei",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 14:47:30.428965",
+  "name": "o31p9f32ce",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Resignation Request",
+  "reference_name": "o1q2mfn9ei",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 14:52:02.611105",
+  "name": "sp515763j2",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Employee Separation",
+  "reference_name": "HR-EMP-SEP-2026-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending HR Review"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Head",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 14:55:31.152429",
+  "name": "sqa50uiiiu",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Employee Separation",
+  "reference_name": "HR-EMP-SEP-2026-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:32:44.210297",
+  "name": "d8igvcjgh2",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:38:27.152388",
+  "name": "o0fd0sol0p",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00006",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:51:15.310136",
+  "name": "vf043bc7ae",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:51:15.316445",
+  "name": "vghpa3ac1b",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00006",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:57:39.565442",
+  "name": "37hdft0mue",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "bharathiraj7890@gmail.com",
+  "completed_by_role": "Head",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:57:48.250466",
+  "name": "38j7js6phq",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Payroll Entry",
+  "reference_name": "HR-PRUN-2026-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:58:10.993558",
+  "name": "3bb4qtvsu3",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Salary Slip",
+  "reference_name": "Sal Slip/HR-EMP-00011/00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "bharathiraj7890@gmail.com",
+  "completed_by_role": "Head",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 15:58:28.345957",
+  "name": "3iei6lifhg",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Salary Slip",
+  "reference_name": "Sal Slip/HR-EMP-00011/00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 16:02:53.827638",
+  "name": "69u3ftdije",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Salary Slip",
+  "reference_name": "Sal Slip/HR-EMP-00011/00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "bharathiraj7890@gmail.com",
+  "completed_by_role": "Head",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-14 16:03:09.335507",
+  "name": "6aqvmeo0c9",
+  "permitted_roles": [
+   {
+    "role": "Head"
+   }
+  ],
+  "reference_doctype": "Salary Slip",
+  "reference_name": "Sal Slip/HR-EMP-00011/00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "bharathiraj7890@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:23:43.588346",
+  "name": "3gpip89mpv",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00012",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 10:53:41.403753",
+  "name": "4clo7fnps9",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "sivaram122326@gmail.com",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 10:58:37.363219",
+  "name": "7jgnn3prt3",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "yogeshkg916@gmail.com",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "sivaraman1202005@gmail.com",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 10:53:51.274569",
+  "name": "8l639miaap",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "sivaram122326@gmail.com",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Screening"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 10:53:51.291562",
+  "name": "8o8et2a2vq",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "sivaram122326@gmail.com",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Interview Scheduled"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 10:58:46.566227",
+  "name": "bhl9ooilnp",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "yogeshkg916@gmail.com",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Screening"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 10:58:46.589639",
+  "name": "bkhr1j6umg",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "yogeshkg916@gmail.com",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Interview Scheduled"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:03:16.481103",
+  "name": "e8sn6nt34u",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00010",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "sakthipgopi2002@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:15:22.977201",
+  "name": "kubfkmqb5k",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00013",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:15:22.981911",
+  "name": "lbtsdra1er",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00013",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "bharathiraj7890@gmail.com",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:37:53.236197",
+  "name": "t52rqkd4gf",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00014",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 11:37:53.243405",
+  "name": "2hshidcdtt",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00014",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Leave Approver",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 12:00:41.613388",
+  "name": "32sebq6ej7",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00015",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 12:00:41.619014",
+  "name": "ftg0n6pui8",
+  "permitted_roles": [
+   {
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00015",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Rejected"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 12:18:15.890183",
+  "name": "q6uluq0ri2",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00016",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-16 13:09:30.143513",
+  "name": "o7lssu12ki",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Job Applicant",
+  "reference_name": "Demo@gmail.com",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-17 15:17:16.263920",
+  "name": "erasja6jta",
+  "permitted_roles": [
+   {
+    "role": "HR Manager"
+   }
+  ],
+  "reference_doctype": "Expense Claim",
+  "reference_name": "HR-EXP-2026-00007",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-17 19:01:20.656737",
+  "name": "i4mkvvormb",
+  "permitted_roles": [
+   {
+    "role": "Leave Approver"
+   }
+  ],
+  "reference_doctype": "Leave Application",
+  "reference_name": "HR-LAP-2026-00017",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending Approval"
+ }
+]

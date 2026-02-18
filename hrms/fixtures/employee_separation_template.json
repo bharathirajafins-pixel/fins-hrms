@@ -1,0 +1,37 @@
+[
+ {
+  "activities": [
+   {
+    "activity_name": "Id verify",
+    "begin_on": 1,
+    "description": null,
+    "duration": 1,
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "employee@gmail.com"
+   },
+   {
+    "activity_name": "email Disconect",
+    "begin_on": 1,
+    "description": null,
+    "duration": 1,
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "employee@gmail.com"
+   }
+  ],
+  "company": "Finstein",
+  "department": null,
+  "designation": null,
+  "docstatus": 0,
+  "doctype": "Employee Separation Template",
+  "employee_grade": null,
+  "modified": "2026-02-14 12:48:52.070928",
+  "name": "HR-EMP-STP-00001",
+  "title": "Standard Exit Template"
+ }
+]
